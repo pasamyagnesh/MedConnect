@@ -24,7 +24,10 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: ['react-router-dom'], 
-       external: ['react-toastify'],// If you need to externalize this package explicitly
+      external: ['react-toastify'],
+      external: [
+        'react-toastify/dist/ReactToastify.css'  // Exclude the CSS file
+      ],// If you need to externalize this package explicitly
     },
   },
 });
