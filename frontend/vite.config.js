@@ -15,7 +15,7 @@ export default defineConfig({
       external: [
         'react-toastify/dist/ReactToastify.css'  // Exclude the CSS file
       ],
-      external: ['swiper/react', 'swiper/swiper-bundle.min.css'],// If you need to externalize this package explicitly
+      external: ['swiper/react'],// If you need to externalize this package explicitly
     },
   },
 });
