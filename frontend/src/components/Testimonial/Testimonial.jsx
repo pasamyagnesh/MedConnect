@@ -5,7 +5,6 @@ const Testimonial = () => {
     <div>Testimonial</div>
   )
 }
-
 export default Testimonial
 
 // import React from "react";
