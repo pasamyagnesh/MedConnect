@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import esbuild from 'vite-plugin-esbuild';
+// import esbuild from 'vite-plugin-esbuild';
 
 export default defineConfig({
   plugins: [react(), esbuild()],
