@@ -6,7 +6,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': '/src', // Update if you use custom aliases
-      swiper: './node_modules/swiper/react',
+      swiper: 'node_modules/swiper/react',
     },
   },
   build: {
