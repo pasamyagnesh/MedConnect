@@ -1,9 +1,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-// import esbuild from 'vite-plugin-esbuild'; 
+import esbuild from 'vite-plugin-esbuild';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), esbuild({
+    target: 'es2020', // or 'es2015' or 'es2017'
+    loaders: {
+      '.js': 'esbuild',
+    },
+  })],
   resolve: {
     alias: {
       '@': '/src', // Update if you use custom aliases
