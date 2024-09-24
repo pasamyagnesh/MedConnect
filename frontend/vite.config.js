@@ -12,7 +12,6 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        'react-router-dom',
         'react-toastify',
         'react-toastify/dist/ReactToastify.css', // Exclude the CSS file
         'swiper/react', // If you need to externalize this package explicitly
