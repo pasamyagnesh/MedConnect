@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #f5f3ff; */
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+form,
+textarea,
+input {
+  background-color: #f5f3ff;
+}
+
+.swiper {
+  padding-bottom: 70px !important;
+}
+
+.swiper-pagination {
+  top: 90% !important;
+}
+
+.swiper-slide {
+  transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #181a1e !important;
+  background: #fff !important;
+  opacity: 1 !important;
+  margin: 0 5px; /* Add some spacing between bullets */
+  transition: background 0.3s, border 0.3s; /* Smooth transition for active bullets */
+}
+
+.swiper-slide.swiper-slide-active {
+  background: #7c3aed !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 20px 70px #d3b3ff !important;
+}
+.swiper-pagination-bullet-active {
+  background: #7c3aed !important;
+  border: none !important;
+  color: #fff;
+}
+.swiper-slide.swiper-slide-active h4,
+.swiper-slide.swiper-slide-active p {
+  color: #fff !important;
+}
+
+.sticky__header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  background: white;
+  box-shadow: 3px 3px -8px 3px #ddd;
+}
+
+@media only screen and (max-width: 768px) {
+  .navigation {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #00000084;
+    display: none;
+  }
+
+  .menu {
+    width: 15rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    z-index: 200;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+  }
+
+  .show__menu {
+    display: block;
+  }
+}
