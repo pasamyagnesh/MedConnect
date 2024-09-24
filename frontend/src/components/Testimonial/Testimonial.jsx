@@ -4,7 +4,7 @@ import { Pagination } from "swiper/modules";
 import 'swiper/swiper-bundle.min.css';
 import 'swiper/swiper.min.css'; 
 import "swiper/css";
-import "swiper/css/pagination";
+import "swiper/css/bundle";
 import patientAvatar from "../../assets/images/patient-avatar.png";
 import avatar1 from "../../assets/images/avatar-01.jpg";
 import avatar2 from "../../assets/images/avatar-02.jpg";
