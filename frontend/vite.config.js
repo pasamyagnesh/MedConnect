@@ -23,7 +23,8 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['react-router-dom'], // If you need to externalize this package explicitly
+      external: ['react-router-dom'], 
+       external: ['react-toastify'],// If you need to externalize this package explicitly
     },
   },
 });
