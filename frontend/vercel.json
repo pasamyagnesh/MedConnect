@@ -1,3 +1,9 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" },
+    {
+      "source": "/react-router-dom",
+      "destination": "https://cdn.jsdelivr.net/npm/react-router-dom@6.3.0/dist/react-router-dom.min.js"
+    }
+  ]
 }
