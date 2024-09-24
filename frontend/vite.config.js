@@ -1,16 +1,3 @@
-// import { defineConfig } from 'vite';
-// import react from '@vitejs/plugin-react';
-
-// export default defineConfig({
-//   plugins: [react()],
-//   build: {
-//     rollupOptions: {
-//       external: ['react-router-dom']
-//     }
-//   }
-// });
-
-// vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -28,7 +15,7 @@ export default defineConfig({
       external: [
         'react-toastify/dist/ReactToastify.css'  // Exclude the CSS file
       ],
-      external: ['swiper/react'],// If you need to externalize this package explicitly
+      external: ['swiper/react', 'swiper/swiper-bundle.min.css'],// If you need to externalize this package explicitly
     },
   },
 });
