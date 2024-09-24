@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-// import esbuild from 'vite-plugin-esbuild';
+// import esbuild from 'vite-plugin-esbuild'; 
 
 export default defineConfig({
   plugins: [react(), esbuild()],
@@ -11,12 +11,12 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['react-router-dom'], 
-      external: ['react-toastify'],
       external: [
-        'react-toastify/dist/ReactToastify.css'  // Exclude the CSS file
+        'react-router-dom',
+        'react-toastify',
+        'react-toastify/dist/ReactToastify.css', // Exclude the CSS file
+        'swiper/react', // If you need to externalize this package explicitly
       ],
-      external: ['swiper/react'],// If you need to externalize this package explicitly
     },
   },
 });
