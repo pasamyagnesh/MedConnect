@@ -26,16 +26,14 @@ app.get("/", (req, res) => {
 mongoose.set("strictQuery", false);
 const connectDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(process.env.MONGO_URL);
     console.log("MongoDB database is connected");
   } catch (err) {
     console.error("Database connection failed", err);
-    process.exit(1); // Exit the process if database connection fails
+    process.exit(1); // Exit the process if the database connection fails
   }
 };
+
 
 // Middleware
 app.use(express.json());
