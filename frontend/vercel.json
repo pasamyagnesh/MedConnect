@@ -1,9 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" },
+  "builds": [
     {
-      "source": "/react-router-dom",
-      "destination": "https://cdn.jsdelivr.net/npm/react-router-dom@6.3.0/dist/react-router-dom.min.js"
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
+  ],
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/" }
   ]
 }
